@@ -53,6 +53,15 @@ export const off_list = [
 
 export const product_share = [
     {p_name: 'show with brand ...', e_name: 'shoe with brand ...'}
+];
+
+
+export const cart = [
+    {p_name: 'Apple',e_name:'Apple', color: 'black', color_rgb:'#000',warranty:' 18 months',seller:'digikala',number:'2',price:'1000',end_price:'1000',img: require('../../assets/mobile/1.jpg')},
+    {p_name:'Samsung Galaxy s23',e_name:'Samsung Galaxy s23', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'700',end_price:'700',img: require('../../assets/mobile/2.jpg')},
+    {p_name:'Huawei',e_name:'Huawei', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'500',end_price:'500',img: require('../../assets/mobile/3.jpg')},
+    {p_name:'LG V 20',e_name:'LG V 20', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'600',end_price:'600',img: require('../../assets/mobile/4.jpg')},
+    {p_name:'Nokia',e_name:'Nokia', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'400',end_price:'400',img: require('../../assets/mobile/5.jpg')}
 ]
 
 
