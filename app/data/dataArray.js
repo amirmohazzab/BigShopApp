@@ -25,11 +25,11 @@ export const offer_list = [
 ];
 
 export const product_list = [
-    {pname: 'Shoe', price: '100', img: require('../../assets/product/1.jpg')},
-    {pname: 'Shirt', price: '40', img: require('../../assets/product/2.jpg')},
-    {pname: 'Pan', price: '20', img: require('../../assets/product/3.jpg')},
-    {pname: 'Sack', price: '60', img: require('../../assets/product/4.jpg')},
-    {pname: 'Watch', price: '150', img: require('../../assets/product/5.jpg')},
+    {pname: 'Shoe', ename: 'Shoe', price: '100', tprice: 75, img: require('../../assets/product/1.jpg')},
+    {pname: 'Shirt', ename: 'Shirt', price: '40', tprice: 30, img: require('../../assets/product/2.jpg')},
+    {pname: 'Pan', ename: 'Pan', price: '20', tprice: 15, img: require('../../assets/product/3.jpg')},
+    {pname: 'Sack', ename: 'Sack', price: '60', tprice: 20, img: require('../../assets/product/4.jpg')},
+    {pname: 'Watch', ename: 'Watch', price: '150', tprice: 120, img: require('../../assets/product/5.jpg')},
 ];
 
 

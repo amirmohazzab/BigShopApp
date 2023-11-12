@@ -7,6 +7,7 @@ import Cart from './screens/Cart';
 import Login from './screens/Login';
 import Register from './screens/Register';
 import ForgetPass from './screens/ForgetPass';
+import Search from './screens/Search';
 
 
 const Stack = createStackNavigator();
@@ -14,7 +15,7 @@ const Stack = createStackNavigator();
 const StackNavigator = () =>  {
   return (
     <Stack.Navigator 
-      initialRouteName='ForgetPass'
+      initialRouteName='Off'
       screenOptions={{headerShown: true}}>
       <Stack.Screen name="Main" component={Main} />
       <Stack.Screen name="Category" component={Category} />
@@ -24,6 +25,7 @@ const StackNavigator = () =>  {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Register" component={Register} />
       <Stack.Screen name="ForgetPass" component={ForgetPass} />
+      <Stack.Screen name="Search" component={Search} />
     </Stack.Navigator>
   );
 }
