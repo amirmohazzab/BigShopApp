@@ -4,7 +4,6 @@ import {useNavigation} from '@react-navigation/native'
 import Ripple from 'react-native-material-ripple'
 import {product_list} from '../../data/dataArray'
 
-
 const w = Dimensions.get('window').width;
 
 const Productone = () => {

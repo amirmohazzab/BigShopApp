@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
 import {Text, View, StyleSheet, Dimensions, TouchableOpacity} from 'react-native'
 import Ripple from 'react-native-material-ripple';
+import {useNavigation} from '@react-navigation/native'
 import {MaterialCommunityIcons, MaterialIcons, SimpleLineIcons, Ionicons} from '@expo/vector-icons'
 
 w = Dimensions.get('window').width;
 
 
 const Garranty = () => {
+
+    const {navigate} = useNavigation();
 
     const [border_color, set_border_color] = useState('black');
 
@@ -85,7 +88,7 @@ const Garranty = () => {
                     7.191 Euro <Text style={{color: 'red', fontSize: 16, textDecorationLine: 'line-through'}}> 8 Euro</Text>
                   </Text>
                   <View style={{alignItems: 'center'}}>
-                    <Ripple style={styles.sec3_part2}>
+                    <Ripple style={styles.sec3_part2} onPress={() => navigate('Cart')}>
                       <Text style={{color: 'white', fontSize: 18}}>
                         Add to cart
                       </Text>

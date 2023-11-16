@@ -67,7 +67,7 @@ export default Content;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: "100%",
+    height: "80.65%",
     padding: 20,
     paddingTop: 0,
     justifyContent: 'flex-start',

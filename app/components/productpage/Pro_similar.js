@@ -39,7 +39,6 @@ const Pro_similar = () => {
                                     {item.price} Euro
                                 </Text>
                             </View>
-                           
                         </View>
                     </Ripple>
                 }
@@ -78,13 +77,13 @@ const styles = StyleSheet.create({
         borderWidth:0.5
     },
     view_img:{
-        width:'90%',
+        width:'100%',
         height:'70%',
         alignItems:'center',
         justifyContent:'center'
     },
     img:{
-        width:'100%',
+        width:'90%',
         height:'100%',
         resizeMode:'contain'
     },

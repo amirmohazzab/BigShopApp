@@ -1,16 +1,18 @@
 import React, {useState} from 'react'
 import {View, Text, StyleSheet, Image, Dimensions, Modal, TouchableOpacity} from 'react-native'
 import Ripple from 'react-native-material-ripple';
+import {useNavigation} from '@react-navigation/native'
 //import {styles} from 'react-native-material-ripple'
-import { off_list } from '../../data/dataArray';
 import {Ionicons, MaterialIcons, Feather, SimpleLineIcons, Entypo} from '@expo/vector-icons'
 import { product_list } from '../../data/dataArray';
+import { off_list } from '../../data/dataArray';
 
 
 const w = Dimensions.get('window').width;
 
 const Offs = () => {
 
+    const {navigate} = useNavigation();
 
     const [changeState, setChangeState] = useState(1);
     const [changeIcon, setChangeIcon] = useState(<Ionicons name="grid-outline" size={24} color="black" />);
@@ -124,7 +126,7 @@ const Offs = () => {
 
     const Full = ({data}) => {
         return (
-            <View style={Full_styles.box}>
+            <Ripple style={Full_styles.box} onPress={() => navigate('Product')}>
                 <View style={Full_styles.sec1}>
                     <View style={{justifyContent: 'center', alignItems: 'center'}}>
                         <Image 
@@ -148,14 +150,14 @@ const Offs = () => {
                         <Text style={{color: '#5ecf56', fontSize: 16}}> `${data.tprice} Euro` </Text>
                     </View>
                 </View>
-            </View>
+            </Ripple>
         )
     };
 
 
     const Half = ({data}) => {
         return (
-            <View style= {Half_styles.box}>
+            <Ripple style= {Half_styles.box} onPress={() => navigate('Product')}>
                 <View style={Half_styles.left}>
                     <Image 
                         source={data.img}
@@ -182,14 +184,14 @@ const Offs = () => {
                         </View>
                     </View>
                 </View>
-            </View>
+            </Ripple>
         )
     }
 
 
     const Quarter = ({data}) => {
         return (
-            <View style={Quarter_styles.box}>
+            <Ripple style={Quarter_styles.box} onPress={() => navigate('Product')}>
                 <View style={Quarter_styles.sec1}>
                     <View style={{justifyContent: 'center', alignItems: 'center'}}>
                         <Image 
@@ -210,7 +212,7 @@ const Offs = () => {
                         <Text style={{color: '#5ecf56', fontSize: 13}}> `${data.tprice} Euro` </Text>
                     </View>
                 </View>
-            </View>
+            </Ripple>
         )
     }
 

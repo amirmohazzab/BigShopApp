@@ -6,14 +6,19 @@ import Offer from '../components/mainpage/Offer';
 import Off from '../components/mainpage/Off';
 import Productone from '../components/mainpage/Productone';
 import Producttwo from '../components/mainpage/Producttwo';
+import Amazing_Suggestion from '../components/mainpage/Amazing_Suggestion'
+import MyHeader from '../components/header/MyHeader';
 
 
 
 const Main = () => {
     return ( 
-        <ScrollView>
+        <ScrollView style={{backgroundColor: '#eee'}}>
+            <MyHeader head_name={'Main'} />
             <Slider />
             <Category />
+            <Amazing_Suggestion />
+            <Off />
             <Offer />
             <Off />
             <Productone />

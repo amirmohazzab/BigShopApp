@@ -1,10 +1,14 @@
 import React, {useEffect, useRef, useState} from 'react'
 import {View, Text, StyleSheet, Dimensions, TextInput} from 'react-native'
+import {useNavigation} from '@react-navigation/native'
+
 
 const w = Dimensions.get('window').width;
 
 
   const Content = () => {
+
+    const {navigate} = useNavigation();
 
     const pin1Ref = useRef(null);
     const pin2Ref = useRef(null);
@@ -19,9 +23,6 @@ const w = Dimensions.get('window').width;
     const [pin5, setPin5] = useState("");
 
     
-
-   
-
     useEffect(() => {
       if (pin1Ref.current) {
         setTimeout(() => {
@@ -36,7 +37,7 @@ const w = Dimensions.get('window').width;
                 <Text style={styles.sec1_text1}>
                     Confirmation code is submitted for number 1111111
                 </Text>
-                <Text style={styles.sec1_text2}>
+                <Text style={styles.sec1_text2} onPress={() => navigate('Login')}>
                     Edit phone number
                 </Text>
             </View>
@@ -59,6 +60,7 @@ const w = Dimensions.get('window').width;
                       // autoFocus={true}
                       // selectTextOnFocus={true}
                       // onFocus={() => setHasFocus(true)}
+                      selectionColor='green'
                     />
                   </View>
 

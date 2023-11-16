@@ -45,9 +45,9 @@ export const category_item = [
 
 export const off_list = [
     {l_price: 120, n_price: 100, img: require('../../assets/1.jpg')},
+    {l_price: 120, n_price: 100, img: require('../../assets/2.jpg')},
     {l_price: 120, n_price: 100, img: require('../../assets/1.jpg')},
-    {l_price: 120, n_price: 100, img: require('../../assets/1.jpg')},
-    {l_price: 120, n_price: 100, img: require('../../assets/1.jpg')},
+    {l_price: 120, n_price: 100, img: require('../../assets/2.jpg')},
 ];
 
 
@@ -62,6 +62,22 @@ export const cart = [
     {p_name:'Huawei',e_name:'Huawei', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'500',end_price:'500',img: require('../../assets/mobile/3.jpg')},
     {p_name:'LG V 20',e_name:'LG V 20', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'600',end_price:'600',img: require('../../assets/mobile/4.jpg')},
     {p_name:'Nokia',e_name:'Nokia', color: 'black', color_rgb:'#000',warranty:'18 months',seller:'digikala',number:'2',price:'400',end_price:'400',img: require('../../assets/mobile/5.jpg')}
-]
+];
+
+
+export const cat_content =[
+    {id:1,name:'Cell phone',img: require('../../assets/category/1.jpg')},
+    {id:2,name:'Tablet',img: require('../../assets/category/2.jpg')},
+    {id:3,name:'Lap top',img: require('../../assets/category/3.png')},
+    {id:4,name:'Keyboard',img: require('../../assets/category/4.jpeg')},
+    {id:5,name:'Monitor',img: require('../../assets/category/5.jpg')},
+    {id:6,name:'Charger',img: require('../../assets/category/6.jpg')},
+    {id:1,name:'Cell phone',img: require('../../assets/category/1.jpg')},
+    {id:2,name:'Tablet',img: require('../../assets/category/2.jpg')},
+    {id:3,name:'Lap top',img: require('../../assets/category/3.png')},
+    {id:4,name:'Keyboard',img: require('../../assets/category/4.jpeg')},
+    {id:5,name:'Monitor',img: require('../../assets/category/5.jpg')},
+    {id:6,name:'Charger',img: require('../../assets/category/6.jpg')},
+];
 
 

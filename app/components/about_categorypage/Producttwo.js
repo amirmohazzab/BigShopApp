@@ -4,10 +4,9 @@ import {useNavigation} from '@react-navigation/native'
 import Ripple from 'react-native-material-ripple'
 import {product_list} from '../../data/dataArray'
 
-
 const w = Dimensions.get('window').width;
 
-const Productone = () => {
+const Producttwo = () => {
 
     const {navigate} = useNavigation();
 
@@ -18,7 +17,7 @@ const Productone = () => {
                     Total
                 </Text>
                 <Text style={styles.head_right}>
-                    Newest product
+                    Top product
                 </Text>
             </View>
             <FlatList 
@@ -78,7 +77,7 @@ const Productone = () => {
     )
 }
 
-export default Productone;
+export default Producttwo;
 
 const styles = StyleSheet.create({
     head:{
@@ -94,8 +93,9 @@ const styles = StyleSheet.create({
     head_right:{
         fontSize:14,
         color:'#666',
-        fontWeight: 'bold'
+        fontWeight:'bold',
     },
+
     box:{
         backgroundColor:'#fff',
         flexDirection:'column',
@@ -127,7 +127,6 @@ const styles = StyleSheet.create({
         width: "100%",
         height: '30%',        
     }
-
     // box:{
     //     backgroundColor:'#fff',
     //     flexDirection:'column',

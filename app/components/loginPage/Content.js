@@ -2,9 +2,12 @@ import React, {useState} from 'react'
 import {View, Text, StyleSheet, TextInput} from 'react-native'
 import {MaterialIcons, Ionicons} from '@expo/vector-icons'
 import Ripple from 'react-native-material-ripple'
+import {useNavigation} from '@react-navigation/native'
 
 
 const Content = () => {
+
+    const {navigate} = useNavigation();
 
     const [user, setUser] = useState(false)
     const [pass, setPass] = useState(false);
@@ -67,10 +70,10 @@ const Content = () => {
             </View>
 
             <View style={styles.sec3}>
-                <Text style={{color: '#9a9a9a', padding: 10, fontSize: 13, marginBottom: 10}}>
+                <Text style={{color: '#9a9a9a', padding: 10, fontSize: 13, marginBottom: 10}} onPress={() => navigate('ForgetPass')}>
                     Forgot my Password
                 </Text>
-                <Text style={{color: 'green', borderBottomWidth: 1, borderColor: 'green'}}>
+                <Text style={{color: 'green', borderBottomWidth: 1, borderColor: 'green'}} onPress={() => navigate('Register')}>
                     Register in Digikala
                 </Text>
             </View>
@@ -85,7 +88,7 @@ export default Content;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: "100%",
+    height: "80.65%",
     padding: 20,
     paddingTop: 0,
     justifyContent: 'flex-start',

@@ -9,12 +9,18 @@ import Rating from '../components/productpage/Rating';
 import Category from '../components/productpage/Category';
 import Pro_similar from '../components/productpage/Pro_similar';
 import Pro_other_by from '../components/productpage/Pro_other_by';
+import MyHeader from '../components/header/MyHeader';
 
-
+const props = {
+    head_name: 'Main',
+    head_page_name: 'Cell phone',
+    left_btn: 'back'
+};
 
 const Product = () => {
     return ( 
         <ScrollView style={{backgroundColor: '#eee'}}>
+            <MyHeader {...props} />
             <Slider />
             <ShareInfo />
             <View style={{marginHorizontal: 20}}>
