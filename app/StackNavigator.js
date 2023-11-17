@@ -1,3 +1,4 @@
+import {createDrawerNavigator} from '@react-navigation/drawer'
 import { createStackNavigator } from '@react-navigation/stack';
 
 
@@ -11,17 +12,36 @@ import Login from './screens/Login';
 import Register from './screens/Register';
 import ForgetPass from './screens/ForgetPass';
 import Search from './screens/Search';
+import SideMenu from './components/drawer/SideMenu';
 
 
 const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
+
+
+const Root = () =>  {
+  return (
+    <Drawer.Navigator 
+      drawerContent = {(props) => <SideMenu {...props} />}
+      screenOptions={{
+        headerShown: false,
+        drawerStyle: {
+          width: '70%',
+          backgroundColor: 'skyblue'
+        },
+      }}
+    >
+      <Drawer.Screen name="MainStack" component={MainStack} />
+    </Drawer.Navigator>
+  );
+};
 
 
 
 
 
 
-
-const StackNavigator = () =>  {
+const MainStack = () =>  {
   return (
       <Stack.Navigator 
         initialRouteName='Main'
@@ -45,4 +65,4 @@ const StackNavigator = () =>  {
 
 
 
-export default StackNavigator;
+export default Root

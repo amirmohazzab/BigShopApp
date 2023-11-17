@@ -23,7 +23,7 @@ const MyHeader = ({head_name, head_page_name, left_btn}) => {
                                     <Ionicons name="arrow-back" size={24} color="#fff" />
                                 </Ripple>
                                 :
-                                <Ripple style={styles.btn} >
+                                <Ripple style={styles.btn} onPress={() => navigation.toggleDrawer()}>
                                     <Entypo name="menu" size={24} color="#fff" />
                                 </Ripple>
                             }
@@ -60,6 +60,7 @@ const MyHeader = ({head_name, head_page_name, left_btn}) => {
                     justifyContent: 'space-between',
                 }}
                 androidStatusBarColor= '#ef394e'
+                StatusBarStyle={{backgroundColor: 'red'}}
             />
          );
     } 
@@ -105,7 +106,7 @@ const MyHeader = ({head_name, head_page_name, left_btn}) => {
                 leftComponent={
                     <View style={[styles.row, {width: 110}]}>
                         <View style={{borderRadius: 100}}>
-                            <Ripple style={styles.btn}>
+                            <Ripple style={styles.btn} onPress={() => navigation.goBack()}>
                                 <AntDesign name="close" size={24} color="#000" />
                             </Ripple>
                         </View>
