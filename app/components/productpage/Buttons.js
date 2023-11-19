@@ -1,14 +1,18 @@
-import React, {useState} from 'react'
-import {Text, View, StyleSheet, Dimensions, Share} from 'react-native'
+import React from 'react'
+import {Text, View, StyleSheet, Dimensions} from 'react-native'
 import {MaterialIcons} from 'react-native-vector-icons';
 import Ripple from 'react-native-material-ripple';
+import { useNavigation } from '@react-navigation/native';
 
 const w = Dimensions.get('window').width;
 
 const Buttons = () => {
+
+  const {navigate} = useNavigation();
+
     return ( 
         <View style={styles.container}>
-            <Ripple style={styles.btn}>
+            <Ripple style={styles.btn} onPress={() => navigate('Comment')}>
                 <Text style={styles.txt}>
                     Reviews
                 </Text>

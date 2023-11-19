@@ -3,12 +3,20 @@ import {View, Text, StyleSheet } from 'react-native';
 import {MaterialIcons} from '@expo/vector-icons'
 
 
-const MyFooter = ({text, color}) => {
+const MyFooter = ({text, color, name=null}) => {
     return ( 
         <View style={[styles.footer, {backgroundColor: color == "green" ? "#66bb6a" : "#1e88e5"}]}>
             <View style={styles.row}>
-                <MaterialIcons name="keyboard-arrow-left" size={18} color="#fff" />
-                <Text style={styles.footer_text}> {text}</Text>
+                {
+                  name
+                  ?
+                  <Text style={styles.footer_text}> {name}</Text> 
+                  :
+                  <> 
+                   <MaterialIcons name="keyboard-arrow-left" size={18} color="#fff" />
+                    <Text style={styles.footer_text}> {text} </Text> 
+                  </>
+                }
             </View>
         </View>
      );

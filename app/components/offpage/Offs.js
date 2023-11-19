@@ -2,10 +2,8 @@ import React, {useState} from 'react'
 import {View, Text, StyleSheet, Image, Dimensions, Modal, TouchableOpacity} from 'react-native'
 import Ripple from 'react-native-material-ripple';
 import {useNavigation} from '@react-navigation/native'
-//import {styles} from 'react-native-material-ripple'
 import {Ionicons, MaterialIcons, Feather, SimpleLineIcons, Entypo} from '@expo/vector-icons'
 import { product_list } from '../../data/dataArray';
-import { off_list } from '../../data/dataArray';
 
 
 const w = Dimensions.get('window').width;
@@ -73,7 +71,6 @@ const Offs = () => {
     const Modall = () => {
         return (
             <Modal visible={showModal} transparent={true} >
-                {/* <Ripple rippleColor='transparent' style={Modal_styles.box} onPress={() => setShowModal(false)} />     */}
                     <TouchableOpacity style={Modal_styles.box} onPress={() => setShowModal(false)}>  
                         <View style={Modal_styles.child}>   
                             <Ripple onPress={() => changeModalIcon(1)} style={Modal_styles.modal_btn}>
@@ -118,7 +115,6 @@ const Offs = () => {
                             </Ripple>
                         </View>
                     </TouchableOpacity>
-                {/* <Ripple rippleColor='transparent' style={Modal_styles.box} onPress={() => setShowModal(false)} />  */}
             </Modal>
         )
     };
@@ -233,27 +229,6 @@ const Offs = () => {
                     ))
                 }
             </View>
-            {/* {
-                off_list.map((item, key) => (
-                    <Ripple style={styles.box} key={key}>
-                        <View style={styles.box_image}>
-                            <Image 
-                                style={styles.box_image}
-                                source={item.img}
-                            />
-                        </View>
-                        <View style={{backgroundColor: '#f3f3f3', width: '100%', height: 5}} />
-                        <View style={styles.info}>
-                            <Text style={{color: 'red', marginBottom: 5, fontSize: 18}}>
-                                {item.l_price}
-                            </Text>
-                            <Text style={{color: 'green', fontSize: 18}}>
-                                {item.n_price}
-                            </Text>
-                        </View>
-                    </Ripple>
-                ))
-            } */}
         </View>
      );
 }
@@ -267,21 +242,6 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: '#f1f1f1'
     },
-//   box: {
-//     backgroundColor: "#fff",
-//     marginHorizontal: 10,
-//     marginVertical: 15
-//   },
-//   box_image: {
-//     flex: 1,
-//     justifyContent: "center",
-//     alignItems: "center",
-//     marginBottom:4
-//   },
-//   info: {
-//     alignItems: 'center',
-//     padding: 5
-//   },
   A_header_top: {
     width: '100%',
     height: w/11,
@@ -320,7 +280,6 @@ A_header_top_b_text: {
     color: '#bbb',
     textAlign: 'right', 
 }
-  
 });
 
 
@@ -387,12 +346,10 @@ const Full_styles = StyleSheet.create({
         width: "70%",
         padding: 5,
         paddingTop: 40,
-        
     }, 
     left: {
         height: "100%",
         width: "30%",
-
     }
   });
 
@@ -458,7 +415,6 @@ const Full_styles = StyleSheet.create({
         padding: 10,
         paddingLeft: 30,
         paddingTop: 20
-
     }
   })
   

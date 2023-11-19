@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, ScrollView} from 'react-native'
+import {ScrollView} from 'react-native'
 import ShopBox from '../components/CartPage/ShopBox';
 import MyHeader from '../components/header/MyHeader';
 

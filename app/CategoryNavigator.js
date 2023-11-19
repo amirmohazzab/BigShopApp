@@ -1,9 +1,10 @@
 import React from 'react'
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs'
-import Category2 from './screens/Category2';
-import Content from './components/category_page/Content'
-import { useNavigationState } from '@react-navigation/native';
+import Sport from './screens/Sport';
+import Auto from './screens/Auto';
+import Entertainment from './screens/Entertainment';
 import MyHeader from './components/header/MyHeader';
+
 
 const TopTab = createMaterialTopTabNavigator();
 
@@ -12,22 +13,14 @@ let props = {
     head_page_name: 'Product Categories'
 }
 
-const CategoryNavigator = () => {
+const CategoryNavigator = ({route}) => {
 
-    // const state = useNavigationState(state => state);
-    // const index = useNavigationState(state => state.index);
-    // const isFocused = state.index === index;
-    //         // state.routes.map((route, index) => {
-    //         // const isFocused = state.index === index;
-    //         // }
-    //         console.log("isFocused >>>>>", isFocused)
-    //         console.log("index >>>>>", index)
-   
+    
     return ( 
         <> 
         <MyHeader {...props} />
                 <TopTab.Navigator 
-                    initialRouteName="Category"
+                    initialRouteName={route.params?.num_tab}
                     backBehavior="none"
                     screenOptions={({route}) => ({
                         tabBarItemStyle : ({focused, color, size}) => ({
@@ -38,15 +31,16 @@ const CategoryNavigator = () => {
                         headerShown: false,
                         tabBarScrollEnabled: true,
                         tabBarActiveTintColor: "red",
-                        tabBarInactiveTintColor: "green",
-                        tabBarActiveBackgroundColor: 'lightcyan'
+                        tabBarInactiveTintColor: "grey",
                     })}
                 >
-                    <TopTab.Screen name="Content" component={Content}  />
-                    <TopTab.Screen name="Category2" component={Category2}  />
+                    <TopTab.Screen name="Entertainment" component={Entertainment}  />
+                    <TopTab.Screen name="Sport" component={Sport}  />
+                    <TopTab.Screen name="Auto" component={Auto}  />
                 </TopTab.Navigator>
                 </>
      );
 }
  
+
 export default CategoryNavigator;

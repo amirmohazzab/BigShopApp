@@ -6,29 +6,9 @@ import Stars from 'react-native-stars'
 
 const w = Dimensions.get('window').width
 
-const Rating = () => {
+const Rating_addcomment = () => {
     return ( 
         <View style={styles.container}>
-            <View style={styles.sec1}>
-                <Stars
-                    half={true}
-                    default={2.5}
-                    //update={(val)=>{this.setState({stars: val})}}
-                    spacing={4}
-                    starSizeH={20}
-                    starSizeW={20}
-                    count={5}
-                    fullStar={require('../../../assets/rating/full_star.png')}
-                    emptyStar={require('../../../assets/rating/empty_star.png')}
-                    halfStar={require('../../../assets/rating/half_star.png')} 
-                />
-                <Text style={{fontSize: 12, marginLeft: 3}}>
-                    4.3 out of 5
-                </Text>
-                <Text style={{fontSize: 10, color: '#bbb', marginLeft: 3}}>
-                    from 1900 registered votes
-                </Text>
-            </View>
             <View style={styles.sec2}>
                 <View style={styles.sec2_part}>
                     <Stars
@@ -132,7 +112,7 @@ const Rating = () => {
      );
 }
  
-export default Rating;
+export default Rating_addcomment;
 
 
 const styles = StyleSheet.create({
@@ -142,12 +122,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingHorizontal: 5,
     padding: 5,
-    elevation: 2,
+    elevation: 0,
     marginBottom: 10
   },
   sec1: {
     paddingVertical: 30,
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -156,10 +136,9 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   sec2_part: {
-    flexDirection: 'row', 
+    flexDirection: 'row-reverse', 
     justifyContent: 'space-between', 
     alignItems: 'center',
     marginBottom: 8
 } 
-  
 })

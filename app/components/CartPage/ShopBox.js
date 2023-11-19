@@ -1,25 +1,11 @@
-import React, {useState} from 'react'
-import {Text, View, StyleSheet, Image, Dimensions, Alert} from 'react-native'
+import React from 'react'
+import {Text, View, StyleSheet, Image, Dimensions} from 'react-native'
 import {Picker} from '@react-native-picker/picker';
 import {cart} from '../../data/dataArray'
 
 const w = Dimensions.get('window').width;
 
 const ShopBox = () => {
-
-    // const confirmationAlert = () => {
-    //     Alert.alert(
-    //         'Do you want to delete?',
-    //         [
-    //           {
-    //             text: 'No',
-    //             onPress: () => console.log('Cancel Pressed'),
-    //             style: 'cancel',
-    //           },
-    //           {text: 'Yes', onPress: () => console.log('OK Pressed')},
-    //         ],
-    //       );
-    // }
 
     _alert=()=>{
         alert(
@@ -105,7 +91,6 @@ export default ShopBox;
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-   
   },
   content: {
     width: null,

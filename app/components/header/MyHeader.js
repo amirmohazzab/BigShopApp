@@ -167,6 +167,33 @@ const MyHeader = ({head_name, head_page_name, left_btn}) => {
          );
     } 
 
+    const Comment_Header = () => {
+        return ( 
+            <Header
+                leftComponent={
+                    <View style={[styles.row, {width: 200}]}>
+                        <View style={{borderRadius: 100}}>
+                            <Ripple style={styles.btn} onPress={() => navigation.goBack()}>
+                                <AntDesign name="close" size={24} color="#fff" />
+                            </Ripple>
+                        </View>
+                        <View style={{borderRadius: 100}}>
+                            <Ripple style={styles.btn}>
+                                <Text style={{fontSize: 18, color: '#fff', }}> {head_page_name} </Text>
+                            </Ripple>
+                        </View>
+                    </View>
+                }
+                rightComponent={{}}
+                containerStyle={{
+                    backgroundColor: '#ef394e',
+                    justifyContent: 'space-between',
+                }}
+                androidStatusBarColor= '#ef394e'
+            />
+         );
+    } 
+
     const Search_Header = () => {
         return ( 
             <Header
@@ -260,6 +287,9 @@ const MyHeader = ({head_name, head_page_name, left_btn}) => {
             break
             case 'CategoryNavigator':
             return CategoryNavigator_Header();
+            break
+            case 'Comment':
+            return Comment_Header();
             break
         }
 

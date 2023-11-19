@@ -16,7 +16,7 @@ const Content = () => {
                 data={cat_content}
                 keyExtractor={item => item.id}
                 renderItem={({item, index}) => (
-                    <TouchableOpacity style={styles.btn} key={index} activeOpacity={1} onPress={() => navigate('AboutCategory')}>
+                    <TouchableOpacity style={styles.btn} key={index} activeOpacity={1} onPress={() => navigate('AboutCategory', {header_name: item.name})}>
                         <Text style={styles.txt}> {item.name} </Text>
                         <Image 
                             source={item.img}
@@ -51,6 +51,5 @@ const styles = StyleSheet.create({
   txt: {
     fontSize: 18,
     color: '#999'
-
   }
 })

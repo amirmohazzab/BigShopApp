@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {View, Text, StyleSheet, TextInput} from 'react-native'
-import {MaterialIcons, Ionicons} from '@expo/vector-icons'
-import Ripple from 'react-native-material-ripple'
+import {MaterialIcons} from '@expo/vector-icons'
 
 
 const Content = () => {

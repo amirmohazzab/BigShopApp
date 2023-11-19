@@ -72,12 +72,12 @@ export const cat_content =[
     {id:4,name:'Keyboard',img: require('../../assets/category/4.jpeg')},
     {id:5,name:'Monitor',img: require('../../assets/category/5.jpg')},
     {id:6,name:'Charger',img: require('../../assets/category/6.jpg')},
-    {id:1,name:'Cell phone',img: require('../../assets/category/1.jpg')},
-    {id:2,name:'Tablet',img: require('../../assets/category/2.jpg')},
-    {id:3,name:'Lap top',img: require('../../assets/category/3.png')},
-    {id:4,name:'Keyboard',img: require('../../assets/category/4.jpeg')},
-    {id:5,name:'Monitor',img: require('../../assets/category/5.jpg')},
-    {id:6,name:'Charger',img: require('../../assets/category/6.jpg')},
+    {id:7,name:'Cell phone',img: require('../../assets/category/1.jpg')},
+    {id:8,name:'Tablet',img: require('../../assets/category/2.jpg')},
+    {id:9,name:'Lap top',img: require('../../assets/category/3.png')},
+    {id:10,name:'Keyboard',img: require('../../assets/category/4.jpeg')},
+    {id:11,name:'Monitor',img: require('../../assets/category/5.jpg')},
+    {id:12,name:'Charger',img: require('../../assets/category/6.jpg')},
 ];
 
 

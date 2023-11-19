@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Text, View, StyleSheet, Dimensions, Share} from 'react-native'
-import {FontAwesome, Entypo, AntDesign} from 'react-native-vector-icons';
+import {FontAwesome, Entypo} from 'react-native-vector-icons';
 import { product_share } from '../../data/dataArray';
 import Ripple from 'react-native-material-ripple';
 

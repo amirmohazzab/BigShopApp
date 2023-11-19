@@ -34,7 +34,7 @@ const Amazing_Suggestion = () => {
                 showsHorizontalScrollIndicator={false}
                 data={product_list}
                 renderItem={({item,index})=>
-                    <Ripple style={styles.box} onPress={() => navigate('Product')} >
+                    <Ripple style={styles.box} onPress={() => navigate('Product', {header_name: item.pname})} >
                         <View style={styles.view_img}>
                             <Image 
                                 style={styles.img}

@@ -2,11 +2,15 @@ import React from 'react'
 import {View,Text,StyleSheet,FlatList,Image,Dimensions} from 'react-native'
 import {product_list} from '../../data/dataArray'
 import Ripple from 'react-native-material-ripple'
+import { useNavigation } from '@react-navigation/native';
 
 
 const w = Dimensions.get('window').width;
 
 const Pro_other_by = () => {
+
+    const {navigate} = useNavigation();
+
     return(
         <View style={styles.container}>
             <View style={styles.head}>
@@ -19,7 +23,7 @@ const Pro_other_by = () => {
                 showsHorizontalScrollIndicator={false}
                 data={product_list}
                 renderItem={({item,index})=>
-                    <Ripple style={styles.box} >
+                    <Ripple style={styles.box} onPress={() => navigate('Product', {header_name: item.pname})}>
                         <View style={styles.view_img}>
                             <Image 
                                 style={styles.img}

@@ -1,7 +1,6 @@
 import {createDrawerNavigator} from '@react-navigation/drawer'
 import { createStackNavigator } from '@react-navigation/stack';
 
-
 import Main from './screens/Main';
 import AboutCategory from './screens/AboutCategory';
 import CategoryNavigator from './CategoryNavigator';
@@ -13,6 +12,8 @@ import Register from './screens/Register';
 import ForgetPass from './screens/ForgetPass';
 import Search from './screens/Search';
 import SideMenu from './components/drawer/SideMenu';
+import Comment from './screens/Comment';
+import AddComment from './screens/AddComment';
 
 
 const Stack = createStackNavigator();
@@ -38,9 +39,6 @@ const Root = () =>  {
 
 
 
-
-
-
 const MainStack = () =>  {
   return (
       <Stack.Navigator 
@@ -57,11 +55,11 @@ const MainStack = () =>  {
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="ForgetPass" component={ForgetPass} />
         <Stack.Screen name="Search" component={Search} />
+        <Stack.Screen name="Comment" component={Comment} />
+        <Stack.Screen name="AddComment" component={AddComment} />
       </Stack.Navigator>
   );
 };
-
-
 
 
 

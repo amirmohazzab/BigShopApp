@@ -16,7 +16,7 @@ const Category = () => {
         >
             {
                 cat_list.map((item, key) => (
-                    <TouchableOpacity style={styles.btn} key={key} onPress={() => navigate('CategoryNavigator')}>
+                    <TouchableOpacity style={styles.btn} key={key} onPress={() => navigate('CategoryNavigator', {num_tab: item.name})}>
                         <Text style={styles.text}>
                             {item.name}
                         </Text>

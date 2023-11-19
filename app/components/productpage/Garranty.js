@@ -112,7 +112,6 @@ const Garranty = () => {
                   </View>
                 </View>
 
-
             </View>
         </View>
      );

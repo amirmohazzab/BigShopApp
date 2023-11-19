@@ -38,7 +38,6 @@ const Disc = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus eu orci sit amet ullamcorper. Nulla at dignissim sem, eu ullamcorper tellus. Vestibulum vel lobortis lorem, quis congue dolor. Aliquam aliquam turpis nec lectus imperdiet pharetra. Aliquam felis tortor, convallis vestibulum ligula nec, pellentesque porttitor enim. Morbi vitae justo in mi pretium aliquet. Aliquam erat volutpat. 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus eu orci sit amet ullamcorper. Nulla at dignissim sem, eu ullamcorper tellus. Vestibulum vel lobortis lorem, quis congue dolor. Aliquam aliquam turpis nec lectus imperdiet pharetra. Aliquam felis tortor, convallis vestibulum ligula nec. 
                 </Text>
-
             </View>
             <TouchableOpacity style={styles.btn} onPress = {() => handleChangeHeight()}>
                 <Text style={{color: '#999'}}> {changeBtn} </Text>
@@ -70,5 +69,4 @@ const styles = StyleSheet.create({
     borderColor: '#bbb',
     borderTopWidth: 1,
   }
-  
 })

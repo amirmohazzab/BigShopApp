@@ -57,9 +57,6 @@ const w = Dimensions.get('window').width;
                         if (pin1 != "") pin2Ref.current.focus();
                       }}
                       style={styles.textInputText}
-                      // autoFocus={true}
-                      // selectTextOnFocus={true}
-                      // onFocus={() => setHasFocus(true)}
                       selectionColor='green'
                     />
                   </View>
@@ -181,5 +178,4 @@ const styles = StyleSheet.create({
   textInputText: {
     fontSize: 30,
   }
- 
 })
